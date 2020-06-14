@@ -1,0 +1,50 @@
+@import 'config';
+@import 'home';
+@import 'menu';
+@import 'about';
+@import 'projects&places';
+@import 'contact';
+@import 'responsive';
+
+body {
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: set-text-color($primary-color);
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+
+    a {
+      padding: 0.4rem;
+      @include transition-ease;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  
+}
